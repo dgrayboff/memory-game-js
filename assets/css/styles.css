@@ -166,19 +166,16 @@ h2 {
   border-radius: .5em;
   transition: background 1s, transform 1s;
   margin: 1px;
+  cursor: help;
 }
 
-.card {
+.flip {
   transform: rotateY(180deg);
-}
-
-.card .card-icon {
-  animation: hideicon forwards;
-  /*animation-iteration-count: initial*/
 }
 
 .card-icon {
   position: relative;
   top: 5em;
   color: #FFF;
+  animation: hideicon forwards;
 }
