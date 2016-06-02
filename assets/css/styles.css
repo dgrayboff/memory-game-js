@@ -164,15 +164,18 @@ h2 {
   height: 200px;
   background: #7986CB;
   border-radius: .5em;
+  transition: background 1s, transform 1s;
   margin: 1px;
 }
 
-input {
-  width: 200px;
-  height: 200px;
-  display: none;
+.card {
+  transform: rotateY(180deg);
 }
 
+.card .card-icon {
+  animation: hideicon forwards;
+  /*animation-iteration-count: initial*/
+}
 
 .card-icon {
   position: relative;
