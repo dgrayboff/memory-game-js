@@ -18,14 +18,14 @@
   }
 }
 
-@keyframes hideicon {
+/*@keyframes hideicon {
   0, 50% {
     opacity: 1;
   }
   100% {
     opacity: 0;
   }
-}
+}*/
 
 /* //////// index.html ///////// */
 
@@ -167,15 +167,36 @@ h2 {
   transition: background 1s, transform 1s;
   margin: 1px;
   cursor: help;
+  position: relative;
+  transform-style: preserve-3d;
 }
 
 .flip {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+
 }
 
 .card-icon {
   position: relative;
   top: 5em;
   color: #FFF;
-  animation: hideicon forwards;
+  /*animation: hideicon forwards;*/
+}
+
+.card-icontest {
+  position: relative;
+  top: 5em;
+  color: #FFF;
+  margin-right: 82px;
+
+
+  /*animation: hideicon forwards;*/
+}
+.face {
+  backface-visibility: hidden;
+  position: absolute;
+}
+.back {
+  transform: rotateY(180deg);
 }
