@@ -12,7 +12,8 @@
       // if (firstCard.hasClass('.i') == secondCard.hasClass('.i')) {
       // var array = $('i').attr('class').split('')[1];
       // remember you switched first class name in first two cards in HTML
-      if ($('i').attr('id') == $('i').attr('id')) {
+      // if ($('i').attr('id') === $('i').attr('id')) {
+      if (firstCard.val('.i') == secondCard.val('.i')) {
         console.log("it matches!");
       }
         else {
