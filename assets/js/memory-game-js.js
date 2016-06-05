@@ -9,18 +9,25 @@
     if(flipped.length === 2) { // recognizes 2 cards are flipped
       var firstCard = flipped.first();
       var secondCard = flipped.last();
-      if (firstCard.text() == secondCard.text()) {
-        setTimeout(function(){ $('.card').addClass('.face') }, 500);
-        console.log("it matches!");
-      }
-      else {
-        setTimeout(function(){ $('.card').toggleClass('.flip') }, 500);
-        console.log("doesn't match")
-        }
 
-    }
-    console.log("click works");
-  })
+      if (firstCard.text() == secondCard.text()) {
+        var bothCards = firstCard + secondCard;
+        firstCard.addClass('flip');
+        secondCard.addClass('flip');
+        // setTimeout(function(){ $('.card').removeClass('face') }, 500);
+        console.log("it matches!");
+      } //
+        else {
+        // setTimeout(function(){ $('.card').toggleClass('flip') }, 1000);
+        setTimeout(function(){ $('.flip').removeClass('flip'); }, 1200);}
+        console.log("doesn't match");
+
+
+
+    console.log("click works"); // test click for onclick function
+
+  } // if equals 2
+}) // click function
 
   // if($('.card').toggleClass('flip') === true) {
   //    $('.card-icon').toggleClass('front');

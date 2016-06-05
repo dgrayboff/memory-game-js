@@ -174,23 +174,15 @@ h2 {
 .flip {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
-
 }
-
-/*.card-icon {
-  position: relative;
-  top: 5em;
-  color: #FFF;
-  /*animation: hideicon forwards;*/
-}*/
 
 .card-icon {
   position: relative;
-  top: 5em;
+  top: 10px;
   color: #FFF;
-  /*margin-right: 100px;*/
-  /*animation: hideicon forwards;*/
+  margin-right: 80px;
 }
+
 .face {
   backface-visibility: hidden;
   position: absolute;
