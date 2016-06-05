@@ -177,26 +177,30 @@ h2 {
 
 }
 
-.card-icon {
+/*.card-icon {
   position: relative;
   top: 5em;
   color: #FFF;
   /*animation: hideicon forwards;*/
-}
+}*/
 
-.card-icontest {
+.card-icon {
   position: relative;
   top: 5em;
   color: #FFF;
-  margin-right: 82px;
-
-
+  /*margin-right: 100px;*/
   /*animation: hideicon forwards;*/
 }
 .face {
   backface-visibility: hidden;
   position: absolute;
+  top: 5em;
 }
+
 .back {
   transform: rotateY(180deg);
+}
+
+p {
+  display: none;
 }
