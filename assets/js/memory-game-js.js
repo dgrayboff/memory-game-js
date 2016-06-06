@@ -10,12 +10,9 @@
       if (firstCard.text() == secondCard.text()) {
         firstCard.addClass('flip');
         secondCard.addClass('flip');
-
-        // setTimeout(function(){ $('.card').removeClass('face') }, 500);
         console.log("it matches!");
       } //
       else {
-        // setTimeout(function(){ $('.card').toggleClass('flip') }, 1000);
         setTimeout(function(){ $('.flip').removeClass('flip'); }, 1200);
         console.log("doesn't match");
         }
@@ -44,7 +41,7 @@
 
 // TIMER //
 
-// WORKS, BUT HAS NO FORMATTING AND IS DISPLAY ALL IN SECONDS //
+// WORKS, BUT HAS NO FORMATTING AND IS DISPLAYED ALL IN SECONDS //
 
 // var time = 0;
 //
@@ -57,6 +54,9 @@
 
 
 // timer inspiration from: https://stackoverflow.com/questions/5517597/plain-count-up-timer-in-javascript //
+
+// working timer //
+
 var time = 0;
 
 function pad (val) {
