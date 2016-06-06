@@ -1,8 +1,5 @@
 // var el = $('.card');
 
-
-
-
   $('.card').on('click', function(){
     $(this).addClass('flip');
     var flipped = $('.flip');
@@ -11,19 +8,17 @@
       var secondCard = flipped.last();
 
       if (firstCard.text() == secondCard.text()) {
-        var bothCards = firstCard + secondCard;
         firstCard.addClass('flip');
         secondCard.addClass('flip');
+
         // setTimeout(function(){ $('.card').removeClass('face') }, 500);
         console.log("it matches!");
       } //
-        else {
+      else {
         // setTimeout(function(){ $('.card').toggleClass('flip') }, 1000);
-        setTimeout(function(){ $('.flip').removeClass('flip'); }, 1200);}
+        setTimeout(function(){ $('.flip').removeClass('flip'); }, 1200);
         console.log("doesn't match");
-
-
-
+        }
     console.log("click works"); // test click for onclick function
 
   } // if equals 2
@@ -46,3 +41,33 @@
       // if()
       // if($('.i').first().is()
       //   $('.card').removeClass('face');
+
+// TIMER //
+
+// WORKS, BUT HAS NO FORMATTING AND IS DISPLAY ALL IN SECONDS //
+
+// var time = 0;
+//
+// function myTimer() {
+//   time++
+//   $('.timer').text(time);
+// }
+//
+// setInterval(myTimer, 1000);
+
+
+// timer inspiration from: https://stackoverflow.com/questions/5517597/plain-count-up-timer-in-javascript //
+var time = 0;
+
+function pad (val) {
+  if (val > 9) {
+    return val;
+  } else {
+    return "0" + val;
+  }
+};
+
+setInterval( function(){
+    $("#seconds").text(pad(++time%60));
+    $("#minutes").text(pad(parseInt(time/60,10)));
+}, 1000);
